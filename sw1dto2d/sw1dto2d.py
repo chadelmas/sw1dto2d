@@ -71,7 +71,6 @@ class SW1Dto2D:
 
         # Retrieve or create logger
         self._logger = logging.getLogger("sw1dto2d")
-        print("logger:", self._logger)
         if self._logger.hasHandlers() is False:
             self._logger.setLevel(logging.INFO)
             handler = logging.StreamHandler()
